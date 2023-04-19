@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 body {
-    background-image: url("images/space.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'PT Sans', sans-serif;
     text-align: center;
     height: 100%;
 }
 
 .container {
-    background: #d3e9d5;
-    max-width: 80%;
-    margin: 10vh auto;
-    border: 2px solid #023047;
+    background: #fbc3bc;
+    max-width: 30%;
+    margin: 25vh auto;
+    border: 3px solid #023047;
     border-radius: 8px;
 }
 
 h1 {
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 10px;
     font-weight: bold;
 }
@@ -25,25 +25,48 @@ h1 {
 h2 {
     font-size: 50px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 button {
-    border: 1px solid black;
+    border: 0.5px solid #023047;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin: 0 10px;
     color: white;
     font-weight: bold;
-    width: 200px;
+    width: 170px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.35s;
+}
+
 #increment-btn {
-    background: #38a3a5;
+    background: #c77dff;
 }
 
 #save-btn {
-    background: #22577a;
+    background: #ff5d8f;
 }
 
+#save-el {
+    margin: 10px 33px;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("images/space.jpg");
+        background-size: 80vh;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: 30vh auto;
+    }
+}
